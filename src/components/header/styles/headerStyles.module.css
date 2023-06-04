@@ -1,0 +1,79 @@
+.wrapper{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.leftWrapper{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hamburgerMenu{
+    margin-left: 5vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburgerMenu img{
+    height: 30%;
+}
+
+.logo{
+    margin-left: 3vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 60%;
+}
+
+.companyName{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+    color: #051462;
+    font-size: 0.8rem;
+    font-weight: 600;
+    height: 60%;
+}
+
+.rightWrapper{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.searchIcon{
+    margin-right: 3vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchIcon img{
+    height: 30%;
+}
+
+.signupButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 60%;
+    margin-right: 5vw;
+    background: linear-gradient(90.97deg, #6C7AF7 0%, #A97DF1 99.9%);
+}
