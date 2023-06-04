@@ -1,0 +1,6 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90.97deg, #6C7AF7 0%, #A97DF1 99.9%);
+}

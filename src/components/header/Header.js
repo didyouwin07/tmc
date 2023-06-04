@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../shared/Button";
 import styles from "./styles/headerStyles.module.css";
 
 export default function Header() {
@@ -19,9 +20,15 @@ export default function Header() {
       </div>
       <div className={styles.rightWrapper}>
         <div className={styles.searchIcon}>
-        <img src="/icons/search-icon.svg" alt="search" />
+          <img src="/icons/search-icon.svg" alt="search" />
         </div>
-        <div className={styles.signupButton}>SIGN UP</div>
+        <div className={styles.signupButton}>
+          <Button
+            title="SIGN UP"
+            width="25vw"
+            height="60%"
+          />
+        </div>
       </div>
     </div>
   );

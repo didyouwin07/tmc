@@ -72,8 +72,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25vw;
-    height: 60%;
+    height: 100%;
     margin-right: 5vw;
-    background: linear-gradient(90.97deg, #6C7AF7 0%, #A97DF1 99.9%);
 }
