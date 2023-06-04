@@ -6,6 +6,7 @@ import {
   INTRO_TEXT_TER,
   MISSION_TEXT_PRI,
   MISSION_TEXT_SEC,
+  STARTER_COLLECTION,
   WHY_TMC,
 } from "@/utils/Constants";
 import Image from "next/image";
@@ -22,6 +23,43 @@ const WhyTMC = (props) => {
         <div className={styles.whyTMCPrimary}>{primaryText}</div>
       </div>
       <div className={styles.whyTMCSecondary}>{secondaryText}</div>
+    </div>
+  );
+};
+
+const CollectionCard = (props) => {
+  const {
+    category,
+    image,
+    headline,
+    summary,
+    newsCurator,
+    newsCuratorPic,
+    reviewerCount,
+    publishDate
+  } = props;
+  return (
+    <div className={styles.collectionCardContainer}>
+      <div className={styles.collectionHeader}>
+        <div className={styles.itemCategory}>{category}</div>
+        <div className={styles.bookmarkIcon}>
+          <img src="/icons/bookmark-icon.svg" alt="Bookmark" />
+        </div>
+      </div>
+      <div className={styles.collectionImageContainer}>
+        <img src={image} alt={headline} />
+      </div>
+      <div className={styles.collectionHeadline}>{headline}</div>
+      <div className={styles.collectionSummary}>{summary}</div>
+      <div className={styles.collectionSeparator} />
+      <div className={styles.curatorDetails}>
+        <div className={styles.curatorPic}>
+          <img src={newsCuratorPic} alt={newsCurator} />
+        </div>
+        <div className={styles.curatorName}>{newsCurator}</div>
+        <div className={styles.reviewerCount}>+{reviewerCount}</div>
+      </div>
+      <div className={styles.publishDate}>{publishDate}</div>
     </div>
   );
 };
@@ -58,6 +96,19 @@ export default function Home() {
             secondaryText={reason.textSec}
           />
         ))}
+      </div>
+      <div className={styles.getStartedSection}>
+        <div className={styles.getStartedHeading}>
+          Get access to our Starter Collection by signing up for FREE.
+        </div>
+        <div className={styles.collectionCarouselContainer}>
+          {STARTER_COLLECTION.map((item) => (
+            <CollectionCard {...item} />
+          ))}
+        </div>
+        <div className={styles.signUpNowSection}>
+          
+        </div>
       </div>
     </main>
   );

@@ -25,3 +25,26 @@ export const WHY_TMC = [
     textSec: `Be a part of exclusive The Morning Context community.`,
   },
 ];
+
+export const STARTER_COLLECTION = [
+    {
+        category: 'INTERNET',
+        headline: 'Why rebel foods is alive and kicking',
+        summary: 'Detractors had predicted its death but the company behind brands such as Faasos, Behrouz Biryani and Mandarin Oak has proved them wrong.',
+        image: '/images/rebel-foods.png',
+        publishDate: '10 July 2020',
+        newsCurator: 'Firstname Lastname',
+        newsCuratorPic: '/images/curator-image.png',
+        reviewerCount: 2
+    },
+    {
+        category: 'BUSINESS',
+        headline: 'Fantasy gaming’s trial by fire',
+        summary: 'So far there has been a lot of talk about potential, but very little money is actually being made—and mostly by only one company',
+        image: '/images/fantasy-gaming.png',
+        publishDate: '10 July 2020',
+        newsCurator: 'Firstname Lastname',
+        newsCuratorPic: '/images/curator-image.png',
+        reviewerCount: 2
+    },
+]
