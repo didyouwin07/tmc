@@ -85,3 +85,52 @@
   -webkit-text-fill-color: transparent;
   font-weight: 700;
 }
+
+.whyTMCContainer{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3vh;
+  padding-bottom: 5vh;
+  background-color: white;
+}
+
+.whyTMCHeadingText{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #051462;
+}
+
+.whyTMCComponent{
+  display: flex;
+  flex-direction: column;
+  background-color: #F3F5FF;
+  width: 95%;
+  justify-content: center;
+  padding: 2vh;
+}
+
+.whyTMCHeader{
+  display: flex;
+  align-items: center;
+}
+
+.whyTMCPrimary{
+  color: black;
+  font-weight: bold;
+  margin-left: 2vw;
+}
+
+.whyTMCSecondary{
+  color: black;
+  opacity: 0.9;
+  margin-top: 1vh;
+}
+
+.whyTMCIcon img{
+  height: 3vh;
+  width: 3vh;
+}
