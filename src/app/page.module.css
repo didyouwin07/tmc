@@ -47,3 +47,41 @@
 .getStartedButton{
   margin-top: 2vh;
 }
+
+.missionContainer{
+  height: 50vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.missionPrimaryText{
+  color: #051462;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 70%;
+  text-align: center;
+}
+
+.missionSecondaryText{
+  margin-top: 2vh;
+  font-size: 1.3rem;
+  width: 70%;
+  text-align: center;
+  font-weight: 600;
+
+}
+
+.missionLine1{
+
+}
+
+.missionLine2{
+  background: -webkit-linear-gradient(90deg, #55C79A 0%, #907CFF 52.8%, #FC876D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
