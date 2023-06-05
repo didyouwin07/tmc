@@ -1,265 +1,367 @@
 .main{
+  display: none;
+}
+
+.message{
+  display: flex;
   width: 100%;
-  background-color: white;
-  /* color: black; */
+  height: 100%;
+  background-color: black;
   color: white;
 }
 
-.headerContainer{
-  display: flex;
-  width: 100%;
-  height: 10vh;
-}
+@media screen and (max-aspect-ratio: 13/9) {
+  .message{
+    display: none;
+  }
+  .main {
+    width: 100%;
+    background-color: white;
+    /* color: black; */
+    color: white;
+    display: block;
+  }
 
-.introContainer{
-  height: 60vh;
-  background: url('/images/background-1.svg');
-  background-size: cover;
-  background-repeat:   no-repeat;
-  background-position: center center;     
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .headerContainer {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+  }
 
-.introTextPri{
-  margin-top: 20vh;
-  font-size: 2rem;
-  width: 95%;
-  text-align: center;
-  font-weight: 600;
-}
+  .introContainer {
+    height: 60vh;
+    background: url("/images/background-1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.introTextSec{
-  font-size: 1.5rem;
-  width: 95%;
-  margin-top: 1vh;
-  text-align: center;
-  font-weight: 600;
-}
+  .introTextPri {
+    margin-top: 20vh;
+    font-size: 2rem;
+    width: 95%;
+    text-align: center;
+    font-weight: 600;
+  }
 
-.introTextTer{
-  font-size: 1rem;
-  width: 95%;
-  text-align: center;
-  margin-top: 10vh;
-  font-weight: 300;
-}
+  .introTextSec {
+    font-size: 1.5rem;
+    width: 95%;
+    margin-top: 1vh;
+    text-align: center;
+    font-weight: 600;
+  }
 
-.getStartedButton{
-  margin-top: 2vh;
-}
+  .introTextTer {
+    font-size: 1rem;
+    width: 95%;
+    text-align: center;
+    margin-top: 10vh;
+    font-weight: 300;
+  }
 
-.missionContainer{
-  height: 50vh;
-  background-color: white;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .getStartedButton {
+    margin-top: 2vh;
+  }
 
-.missionPrimaryText{
-  color: #051462;
-  font-size: 2rem;
-  font-weight: 700;
-  width: 70%;
-  text-align: center;
-}
+  .missionContainer {
+    height: 50vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.missionSecondaryText{
-  margin-top: 2vh;
-  font-size: 1.3rem;
-  width: 70%;
-  text-align: center;
-  font-weight: 600;
+  .missionPrimaryText {
+    color: #051462;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 70%;
+    text-align: center;
+  }
 
-}
+  .missionSecondaryText {
+    margin-top: 2vh;
+    font-size: 1.3rem;
+    width: 70%;
+    text-align: center;
+    font-weight: 600;
+  }
 
-.missionLine1{
+  .missionLine1 {
+  }
 
-}
+  .missionLine2 {
+    background: -webkit-linear-gradient(
+      90deg,
+      #55c79a 0%,
+      #907cff 52.8%,
+      #fc876d 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
 
-.missionLine2{
-  background: -webkit-linear-gradient(90deg, #55C79A 0%, #907CFF 52.8%, #FC876D 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-}
+  .whyTMCContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3vh;
+    padding-bottom: 5vh;
+    background-color: white;
+  }
 
-.whyTMCContainer{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 3vh;
-  padding-bottom: 5vh;
-  background-color: white;
-}
+  .whyTMCHeadingText {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #051462;
+  }
 
-.whyTMCHeadingText{
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  color: #051462;
-}
+  .whyTMCComponent {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f5ff;
+    width: 95%;
+    justify-content: center;
+    padding: 2vh;
+  }
 
-.whyTMCComponent{
-  display: flex;
-  flex-direction: column;
-  background-color: #F3F5FF;
-  width: 95%;
-  justify-content: center;
-  padding: 2vh;
-}
+  .whyTMCHeader {
+    display: flex;
+    align-items: center;
+  }
 
-.whyTMCHeader{
-  display: flex;
-  align-items: center;
-}
+  .whyTMCPrimary {
+    color: black;
+    font-weight: bold;
+    margin-left: 2vw;
+  }
 
-.whyTMCPrimary{
-  color: black;
-  font-weight: bold;
-  margin-left: 2vw;
-}
+  .whyTMCSecondary {
+    color: black;
+    opacity: 0.9;
+    margin-top: 1vh;
+  }
 
-.whyTMCSecondary{
-  color: black;
-  opacity: 0.9;
-  margin-top: 1vh;
-}
+  .whyTMCIcon img {
+    height: 3vh;
+    width: 3vh;
+  }
 
-.whyTMCIcon img{
-  height: 3vh;
-  width: 3vh;
-}
+  .getStartedSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fffbf1;
+  }
 
-.getStartedSection{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #FFFBF1;
-}
+  .getStartedHeading {
+    font-size: 2rem;
+    color: #051462;
+    font-weight: bold;
+    width: 95%;
+    align-self: center;
+    text-align: center;
+    margin-top: 3vh;
+  }
 
-.getStartedHeading{
-  font-size: 2rem;
-  color: #051462;
-  font-weight: bold;
-  width: 95%;
-  align-self: center;
-  text-align: center;
-  margin-top: 3vh;
-}
+  .collectionCarouselContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 65vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    column-gap: 5vw;
+    padding: 6vw;
+  }
 
-.collectionCarouselContainer{
-  display: flex;
-  flex-wrap: nowrap;
-  height: 65vh;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  column-gap: 5vw;
-  padding: 6vw;
-}
+  .collectionCardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    flex: 0 0 auto;
+    height: 100%;
+    color: black;
+  }
 
-.collectionCardContainer{
-  display: flex;
-  flex-direction: column;
-  width: 85vw;
-  flex: 0 0 auto;
-  height: 100%;
-  color: black;
-}
+  .collectionHeader {
+    display: flex;
+    width: 100%;
+    color: #fc876d;
+    align-items: center;
+  }
 
-.collectionHeader{
-  display: flex;
-  width: 100%;
-  color: #FC876D;
-  align-items: center;
-}
+  .itemCategory {
+    display: flex;
+    align-self: center;
+    flex: auto;
+  }
 
-.itemCategory{
-  display: flex;
-  align-self: center;
-  flex: auto;
-}
+  .bookmarkIcon {
+    display: flex;
+    align-self: center;
+  }
 
-.bookmarkIcon{
-  display: flex;
-  align-self: center;
-}
+  .bookmarkIcon img {
+    height: 2vh;
+  }
 
-.bookmarkIcon img{
-  height: 2vh;
-}
+  .collectionImageContainer {
+    height: 20vh;
+    width: 100%;
+    margin-top: 1vh;
+  }
 
-.collectionImageContainer{
-  height: 20vh;
-  width: 100%;
-  margin-top: 1vh;
-}
+  .collectionImageContainer img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
 
-.collectionImageContainer img{
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
+  .collectionHeadline {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1vh;
+  }
 
-.collectionHeadline{
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 1vh;
-}
+  .collectionSummary {
+    margin-top: 1vh;
+  }
 
-.collectionSummary{
-  margin-top: 1vh;
-}
+  .collectionSeparator {
+    height: 1px;
+    width: 20%;
+    background-color: #907cff;
+    margin: 1vh 0;
+  }
 
-.collectionSeparator{
-  height: 1px;
-  width: 20%;
-  background-color: #907CFF;
-  margin: 1vh 0;
-}
+  .curatorDetails {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+    align-items: center;
+  }
 
-.curatorDetails{
-  display: flex;
-  flex-direction: row;
-  column-gap: 3vw;
-  align-items: center;
-}
+  .curatorPic {
+    border-radius: 100%;
+    height: 3.5vh;
+    width: 3.5vh;
+    overflow: hidden;
+  }
 
-.curatorPic{
-  border-radius: 100%;
-  height: 3.5vh;
-  width: 3.5vh;
-  overflow: hidden;
-}
+  .curatorPic img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
 
-.curatorPic img{
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-}
+  .curatorName {
+    font-weight: bold;
+  }
 
-.curatorName{
-  font-weight: bold;
-}
+  .reviewerCount {
+    border-radius: 100%;
+    border: 1px solid #907cff;
+    height: 3.5vh;
+    width: 3.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #907cff;
+  }
 
-.reviewerCount{
-  border-radius: 100%;
-  border: 1px solid #907CFF;
-  height: 3.5vh;
-  width: 3.5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #907CFF;
-}
+  .publishDate {
+    margin-top: 1vh;
+    margin-left: 3vw;
+  }
 
-.publishDate{
-  margin-top: 1vh;
-  margin-left: 3vw;
+  .signUpNowSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signUpNowHeading {
+    font-size: 1.75rem;
+    color: #051462;
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    align-self: center;
+  }
+
+  .footerContainer {
+    display: flex;
+    width: 100%;
+  }
+
+  .starterCreditDetails {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    background: linear-gradient(90.97deg, #6c7af7 0%, #a97df1 99.9%);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .creditDetailsInnerContainer {
+    height: calc(55vh - 1vw);
+    width: calc(100% - 1vw);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .creditsTitle {
+    font-size: 1.5rem;
+    color: #051462;
+    font-weight: bold;
+    margin-top: 2vh;
+    width: 90%;
+    text-align: left;
+  }
+
+  .creditBenefits {
+    display: flex;
+    width: 90%;
+    margin-top: 3vh;
+    flex-direction: column;
+    color: black;
+    row-gap: 2vh;
+  }
+
+  .creditBenefit {
+    display: flex;
+    width: 100%;
+    column-gap: 3vw;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .signUpButton {
+    width: 100%;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

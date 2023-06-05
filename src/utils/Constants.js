@@ -48,3 +48,27 @@ export const STARTER_COLLECTION = [
         reviewerCount: 2
     },
 ]
+
+export const SOCIAL_HANDLES = [
+  {
+    name: 'Facebook',
+    icon: '/icons/facebook.png'
+  },
+  {
+    name: 'Twitter',
+    icon: '/icons/twitter.png'
+  },
+  {
+    name: 'LinkedIn',
+    icon: '/icons/linkedin.png'
+  },
+  {
+    name: 'Instagram',
+    icon: '/icons/instagram.png'
+  },
+  {
+    name: 'YouTube',
+    icon: '/icons/youtube.png'
+  }
+
+]

@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Button from "@/components/shared/Button";
 import {
@@ -36,7 +37,7 @@ const CollectionCard = (props) => {
     newsCurator,
     newsCuratorPic,
     reviewerCount,
-    publishDate
+    publishDate,
   } = props;
   return (
     <div className={styles.collectionCardContainer}>
@@ -107,8 +108,49 @@ export default function Home() {
           ))}
         </div>
         <div className={styles.signUpNowSection}>
-          
+          <div className={styles.signUpNowHeading}>
+            Sign up now to access the Starter Collection
+          </div>
+          <div className={styles.starterCreditDetails}>
+            <div className={styles.creditDetailsInnerContainer}>
+              <div className={styles.creditsTitle}>Free 10 Starter Credits</div>
+              <div className={styles.creditBenefits}>
+                <div className={styles.creditBenefit}>
+                  <div className={styles.greenTick}>
+                    <img src="/icons/green-tick.svg" alt="Green Tick" />
+                  </div>
+                  <div className={styles.benefit}>
+                    Get FREE 10 Starter Credits
+                  </div>
+                </div>
+                <div className={styles.creditBenefit}>
+                  <div className={styles.greenTick}>
+                    <img src="/icons/green-tick.svg" alt="Green Tick" />
+                  </div>
+                  <div className={styles.benefit}>
+                    Use Starter Credits to unlock free stories, newsletters and
+                    long reads
+                  </div>
+                </div>
+                <div className={styles.creditBenefit}>
+                  <div className={styles.greenTick}>
+                    <img src="/icons/green-tick.svg" alt="Green Tick" />
+                  </div>
+                  <div className={styles.benefit}>
+                    Starter Credits <span className={styles.bold}>do not expire</span> – use them as on stories of
+                    your choice
+                  </div>
+                </div>
+              </div>
+              <div className={styles.signUpButton}>
+                <Button title='SIGN UP FOR FREE' width="70%" height="6vh" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className={styles.footerContainer}>
+        <Footer />
       </div>
     </main>
   );
